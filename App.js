@@ -1,22 +1,24 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image,  SafeAreaView } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import {
+  StyleSheet,
+  Text,
+  TouchableHighlight,
+  View,
+  Image,
+  SafeAreaView,
+  Button,
+  Alert,
+} from "react-native";
 
 export default function App() {
-  const handlePress = () => {
-    alert('You pressed the button!?');
-  }
+
 
   return (
     <SafeAreaView style={styles.container}>
-      <Text onPress={handlePress}>
-        Open up App.js to start working on your app!
-      </Text>
-      <Image 
-      blurRadius={10}
-      source={{ 
-        height: 300,
-        width: 200,
-        uri: "https://picsum.photos/200/300" }} />
+        <Button
+        color={'orange'} 
+        title="click me" 
+        onPress={()=> Alert.alert('Tytuł', 'Kaboom', [{text: 'yes', onPress: ()=> alert('zgoda')}, {text: 'no', onPress: () }])}/>
       <StatusBar style="auto" />
     </SafeAreaView>
   );
@@ -25,8 +27,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'silver',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "white",
+    alignItems: "center",
+    justifyContent: "center",
   },
 });
