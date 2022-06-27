@@ -8,8 +8,15 @@ export default function App() {
 
   return (
     <SafeAreaView style={styles.container}>
-      <Text onPress={handlePress}>Open up App.js to start working on your app!</Text>
-      <Image source={require('./assets/favicon.png')} />
+      <Text onPress={handlePress}>
+        Open up App.js to start working on your app!
+      </Text>
+      <Image 
+      blurRadius={10}
+      source={{ 
+        height: 300,
+        width: 200,
+        uri: "https://picsum.photos/200/300" }} />
       <StatusBar style="auto" />
     </SafeAreaView>
   );
