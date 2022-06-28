@@ -12,20 +12,56 @@ import {
   Platform,
   StatusBar as StatusBarType,
 } from "react-native";
-import { useDimensions } from "@react-native-community/hooks";
+import { useDimensions, useDeviceOrientation} from "@react-native-community/hooks";
 
 export default function App() {
-
+      const { landscape } = useDeviceOrientation();
+   
 
   return (
-    <SafeAreaView style={[styles.container, containerStyle]}>
-      <View style={{
-        backgroundColor:'dodgerblue',
-        height:"30%",
-        width:'90%',
-      }}></View>
-      <StatusBar style="auto" />
-    </SafeAreaView>
+    <View
+      style={{
+        flex: 1,
+        backgroundColor: "#fff",
+      }}
+    >
+      <View
+        style={{
+          backgroundColor: "#3C1642",
+          flex: 1,
+        }}
+      />
+      <View
+        style={{
+          backgroundColor: "#086375",
+          flex: 1,
+        }}
+      />
+      <View
+        style={{
+          backgroundColor: "#1DD3B0",
+          flex: 1,
+        }}
+        
+      />
+            <View
+        style={{
+          backgroundColor: "#3C1642",
+          flex: 1,
+        }}
+      />
+      <View
+        style={{
+          backgroundColor: "#086375",
+          flex: 1,
+        }}
+      />
+      <View
+        style={{
+          backgroundColor: "#1DD3B0",
+          flex: 1,
+        }} />
+    </View>
   );
 }
 const containerStyle = {backgroundColor: 'orange'}
