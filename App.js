@@ -22,45 +22,42 @@ export default function App() {
     <View
       style={{
         flex: 1,
+        flexDirection: "column",
         backgroundColor: "#fff",
       }}
     >
       <View
         style={{
-          backgroundColor: "#3C1642",
+          backgroundColor: "#433A3F",
+          width:100,
+          height:100,
+        }}
+      />
+      <View
+        style={{
+          backgroundColor: "#3D5A6C",
+          width:300,
+          height:100,
+        }}
+      />
+      <View
+        style={{
+          backgroundColor: "#72A98F",
           flex: 1,
         }}
       />
       <View
         style={{
-          backgroundColor: "#086375",
+          backgroundColor: "#8DE969",
           flex: 1,
         }}
       />
       <View
         style={{
-          backgroundColor: "#1DD3B0",
-          flex: 1,
-        }}
-        
-      />
-            <View
-        style={{
-          backgroundColor: "#3C1642",
-          flex: 1,
+          backgroundColor: "#CBEF43",
+          flex: 0.2,
         }}
       />
-      <View
-        style={{
-          backgroundColor: "#086375",
-          flex: 1,
-        }}
-      />
-      <View
-        style={{
-          backgroundColor: "#1DD3B0",
-          flex: 1,
-        }} />
     </View>
   );
 }
