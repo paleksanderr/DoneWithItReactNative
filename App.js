@@ -26,30 +26,48 @@ export default function App() {
         backgroundColor: "#fff",
         justifyContent: "center",
         alignItems: "center",
+     
       }}
     >
       <View
         style={{
           backgroundColor: "#433A3F",
-          width:10,
-          height:220,
+          width: 100,
+          height: 220,
+         
         }}
       />
       <View
         style={{
           backgroundColor: "#3D5A6C",
-          width:10,
-          height:320,
+          width: 100,
+          height: 220,
+          top: -20,
+          left: -20,
         }}
       />
       <View
         style={{
           backgroundColor: "#72A98F",
-          width:10,
-          height:220,
+          width: 100,
+          height: 220,
+          top: 20,
         }}
       />
-
+      <View
+        style={{
+          backgroundColor: "grey",
+          width: 100,
+          height: 220,
+        }}
+      />
+      <View
+        style={{
+          backgroundColor: "green",
+          width: 100,
+          height: 220,
+        }}
+      />
     </View>
   );
 }
