@@ -15,49 +15,41 @@ import {
 import { useDimensions, useDeviceOrientation} from "@react-native-community/hooks";
 
 export default function App() {
-      const { landscape } = useDeviceOrientation();
+      
    
 
   return (
     <View
       style={{
         flex: 1,
-        flexDirection: "column",
+        flexDirection: "row",
         backgroundColor: "#fff",
+        justifyContent: "center",
+        alignItems: "center",
       }}
     >
       <View
         style={{
           backgroundColor: "#433A3F",
-          width:100,
-          height:100,
+          width:10,
+          height:220,
         }}
       />
       <View
         style={{
           backgroundColor: "#3D5A6C",
-          width:300,
-          height:100,
+          width:10,
+          height:320,
         }}
       />
       <View
         style={{
           backgroundColor: "#72A98F",
-          flex: 1,
+          width:10,
+          height:220,
         }}
       />
-      <View
-        style={{
-          backgroundColor: "#8DE969",
-          flex: 1,
-        }}
-      />
-      <View
-        style={{
-          backgroundColor: "#CBEF43",
-          flex: 0.2,
-        }}
-      />
+
     </View>
   );
 }
