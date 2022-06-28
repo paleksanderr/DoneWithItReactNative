@@ -7,14 +7,21 @@ function WelcomeScreen(props) {
       style={styles.background}
       source={require("../assets/Layout-Supplementary-Materials/background.jpg")}
     >
+      <View style={styles.logoContainer}>
       <Image 
       style={styles.logo}
       source={require('../assets/Layout-Supplementary-Materials/logo-red.png')}/>
-      <Text style={styles.title}>Hey</Text>
-      <View style={styles.loginButton}>
-      
+      <Text style={styles.title}>Sell what you don't need</Text>
+
       </View>
-      <View style={styles.singUpButton}></View>
+      <View 
+      
+      style={styles.loginButton}>
+      <Text style={styles.loginText}>Login</Text>
+      </View>
+      <View style={styles.singUpButton}>
+      <Text style={styles.singUpText}>Sing Up</Text>
+      </View>
     </ImageBackground>
   );
 }
@@ -27,27 +34,32 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   loginButton: {
-    width: "100%",
+    width: "80%",
     height: "8%",
     backgroundColor: "#AD6A6C",
+    borderRadius: 100,
+    justifyContent: "center",
+    alignItems: "center",
   },
   singUpButton: {
-    width: "100%",
+    width: "80%",
     height: "8%",
     backgroundColor: "#D0ADA7",
+    alignItems: "center",
+    borderRadius: 100,
+    justifyContent: "center",
+    marginTop: "5%",
+    marginBottom: "5%",
+    
   },
   logo: {
-    position: "absolute",
-    top: 70,
     width: 100,
     height: 100,
   },
-  title: {
-    fontSize: 15,
-    color: "black",
-    fontWeight: "bold",
+  logoContainer: {
     position: "absolute",
-    top: 175,
+    top: 70,
+    alignItems: "center",
   },
 });
 

@@ -14,12 +14,13 @@ import {
 } from "react-native";
 import { useDimensions, useDeviceOrientation} from "@react-native-community/hooks";
 import WelcomeScreen from "./app/screens/WelcomeScreen";
+import VievImageScreen from "./app/screens/VievImageScreen";
 export default function App() {
       
    
 
   return (
-   <WelcomeScreen />
+   <VievImageScreen />
   );
 }
 const containerStyle = {backgroundColor: 'orange'}
